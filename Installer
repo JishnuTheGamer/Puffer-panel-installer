@@ -1,8 +1,23 @@
 #!/bin/bash
 
-# install the puffer panel now!
-git clone https://github.com/JishnuTheGamer/Puffer-panel-installer.git
-cd Puffer-panel-installer
-apt install zip -y && unzip Puffer-panel.zip && cd Puffer-panel.zip.txt && bash Puffer-panel.zip.txt
+echo "updating"
+apt update
 
+echo "installing"
+apt install -y sudo
+apt install -y systemctl
 
+echo "updating"
+curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh\?any\=true | sudo bash
+
+echo "Made By Jishnu"
+sudo apt update
+
+echo "Puffer panel zip"
+sudo apt-get install -y pufferpanel
+
+echo "Creating a user PufferPanel "
+sudo pufferpanel user add
+
+echo "Starting panel in 8080 port"
+sudo systemctl enable --now pufferpanel
