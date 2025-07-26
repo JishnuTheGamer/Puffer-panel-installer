@@ -3,7 +3,6 @@
 # install the puffer panel now!
 git clone https://github.com/JishnuTheGamer/Puffer-panel-installer.git
 cd Puffer-panel-installer
-apt install zip -y && unzip Puffer-panel.zip && cd Puffer-panel.zip.txt
+apt install zip -y && unzip Puffer-panel.zip && cd Puffer-panel.zip.txt && bash Puffer-panel.zip.txt
 
-# final proses
-Bash Puffer-panel.zip.txt
+
